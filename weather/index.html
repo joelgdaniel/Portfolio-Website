@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <div class="input-container">
+            <label for="locationSelect">Choose a location: </label>
+            <select id="locationSelect">
+                <option value="Bangalore">Bangalore</option>
+                <option value="New York">New York</option>
+                <option value="London">London</option>
+                <option value="Tokyo">Tokyo</option>
+                <option value="Paris">Paris</option>
+                <option value="Sydney">Sydney</option>
+                <option value="Other">Other</option>
+            </select>
+            <input type="text" id="customLocation" placeholder="Enter location" style="display:none;">
+            <button id="fetchWeather">Get Weather</button>
+        </div>
+        <div id="weatherInfo" class="weather-info">
+            
+            <div id="weatherDetails" class="weather-details">
+                <h2>Weather Details</h2>
+                <p id="location"></p>
+                <p id="temperature"></p>
+                <p id="conditions"></p>
+                <p id="humidity"></p>
+            </div>
+            <div id="weatherImage" class="weather-image"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
